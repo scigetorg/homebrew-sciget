@@ -9,13 +9,13 @@ cask "scigetapp" do
   desc "Desktop application for scientific computing"
   homepage "https://sciget.org/"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :monterey
 
   app "ScigetApp.app"
 
   zap trash: [
-    "~/Library/Application Support/scigetapp",
-    "~/Library/Preferences/org.neurodesk.scigetapp.plist",
-    "~/Library/Saved Application State/org.neurodesk.scigetapp.savedState",
+    "~/Library/Application Support/neurodeskapp",
+    "~/Library/Preferences/org.neurodesk.neurodeskapp.plist",
+    "~/Library/Saved Application State/org.neurodesk.neurodeskapp.savedState",
   ]
 end
